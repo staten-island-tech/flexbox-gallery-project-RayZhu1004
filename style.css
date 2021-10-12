@@ -1,0 +1,87 @@
+html,
+body,
+* {
+  box-sizing: border-box;
+  font-size: 62.5%;
+  font-family: "Audiowide", sans-serif;
+  background-color: seashell;
+}
+main {
+  text-align: center;
+  font-size: 5rem;
+  animation-name: bababooey;
+  animation-duration: 8s;
+}
+.flex-container > div {
+  font-size: 3rem;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  border-style: solid;
+  padding: 4rem;
+  margin: 6rem;
+  box-shadow: 7px 15px darkgray;
+  border-radius: 20px;
+  text-align: center;
+  width: 70%;
+  object-fit: contain;
+  flex-direction: row;
+}
+.flex-container {
+  display: flex;
+}
+.imggroup-one {
+  width: 20rem;
+  border-radius: 10px;
+}
+.imggroup-two {
+  width: 20rem;
+  border-radius: 10px;
+  height: 50%;
+}
+.imggroup-three {
+  width: 20rem;
+  border-radius: 10px;
+  height: 51%;
+}
+.imggroup-four {
+  width: 20rem;
+  border-radius: 10px;
+  height: auto;
+}
+.imggroup-five {
+  width: 20rem;
+  border-radius: 10px;
+}
+.imggroup-six {
+  width: 20rem;
+  border-radius: 10px;
+}
+.imggroup-seven {
+  width: 20rem;
+  border-radius: 10px;
+}
+.imggroup-eight {
+  width: 20rem;
+  border-radius: 10px;
+  height: 50%;
+}
+.imggroup-nine {
+  width: 20rem;
+  border-radius: 10px;
+  height: 40%;
+}
+.animation:hover {
+  transform: scale(1.2);
+  color: goldenrod;
+}
+.animation {
+  transition: all 0.3s ease-out;
+}
+@keyframes bababooey {
+  from {
+    color: white;
+  }
+  to {
+    color: black;
+  }
+}
