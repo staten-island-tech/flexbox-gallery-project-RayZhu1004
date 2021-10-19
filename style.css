@@ -4,13 +4,25 @@ body,
   box-sizing: border-box;
   font-size: 62.5%;
   font-family: "Audiowide", sans-serif;
-  background-color: seashell;
+  padding: 0;
+  margin: 0;
+}
+body {
+  background-image: url(https://th.bing.com/th/id/R.42371f428400947fdfb68cb9d4860494?rik=1WZ8rN7hUSOWoQ&riu=http%3a%2f%2fwww.ibeacon.com%2fwp-content%2fuploads%2f2014%2f07%2fdominos.jpg&ehk=Y5VqGOA5rELFziUPV64nQMmb9Kew%2fXFXGY4Fvsg0y%2bI%3d&risl=&pid=ImgRaw&r=0);
 }
 main {
   text-align: center;
   font-size: 5rem;
   animation-name: bababooey;
-  animation-duration: 8s;
+  animation-duration: 6s;
+}
+.flex-container {
+  display: flex;
+}
+.flex-box {
+  background-color: white;
+  object-fit: contain;
+  flex-direction: row;
 }
 .flex-container > div {
   font-size: 3rem;
@@ -19,16 +31,14 @@ main {
   border-style: solid;
   padding: 4rem;
   margin: 6rem;
-  box-shadow: 7px 15px darkgray;
+  box-shadow: 7px 15px black;
   border-radius: 20px;
-  text-align: center;
+  align-items: center;
   width: 70%;
   object-fit: contain;
-  flex-direction: row;
+  gap: 2rem;
 }
-.flex-container {
-  display: flex;
-}
+
 .imggroup-one {
   width: 20rem;
   border-radius: 10px;
@@ -70,13 +80,15 @@ main {
   border-radius: 10px;
   height: 40%;
 }
-.animation:hover {
+#animation:hover {
   transform: scale(1.2);
-  color: goldenrod;
+  opacity: 0.7;
+  background-color: cyan;
 }
-.animation {
+#animation {
   transition: all 0.3s ease-out;
 }
+
 @keyframes bababooey {
   from {
     color: white;
@@ -84,4 +96,42 @@ main {
   to {
     color: black;
   }
+}
+@keyframes bababooey {
+  from {
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+@media screen and (max-width: 1920px) {
+  div {
+    width: 100%;
+    display: flexbox;
+  }
+}
+@media screen and (max-width: 768px) {
+  div {
+    width: 125%;
+    height: auto;
+    float: left;
+    display: flexbox;
+  }
+}
+@media screen and (max-width: 375px) {
+  div {
+    width: 150%;
+    height: auto;
+    float: left;
+    display: flexbox;
+  }
+}
+
+a,
+link :hover {
+  color: rgb(255, 4, 4);
+}
+a,
+:active {
+  color: rgb(124, 6, 6);
 }
