@@ -7,7 +7,6 @@ body,
   padding: 0;
   margin: 0;
 }
-
 main {
   text-align: center;
   font-size: 5rem;
@@ -18,10 +17,35 @@ main {
 .flex-container {
   display: flex;
 }
-#animation {
-  background-color: white;
+.flex-box {
   object-fit: contain;
   flex-direction: row;
+  background-color: white;
+}
+.flex-box2 {
+  object-fit: contain;
+  flex-direction: row;
+  background-color: white;
+}
+.flex-box3 {
+  object-fit: contain;
+  flex-direction: row;
+  background-color: white;
+}
+.flex-box4 {
+  object-fit: contain;
+  flex-direction: row;
+  background-color: white;
+}
+.flex-box5 {
+  object-fit: contain;
+  flex-direction: row;
+  background-color: white;
+}
+.flex-box6 {
+  object-fit: contain;
+  flex-direction: row;
+  background-color: white;
 }
 .flex-container > div {
   font-size: 3rem;
@@ -36,48 +60,58 @@ main {
   width: 70%;
   object-fit: contain;
   gap: 2rem;
+  flex-flow: row;
 }
 
 .imggroup-one {
   width: 20rem;
   border-radius: 10px;
+  align-content: center;
 }
 .imggroup-two {
   width: 20rem;
   border-radius: 10px;
   height: 50%;
+  align-content: center;
 }
 .imggroup-three {
   width: 20rem;
   border-radius: 10px;
   height: 51%;
+  align-content: center;
 }
 .imggroup-four {
   width: 20rem;
   border-radius: 10px;
   height: auto;
+  align-content: center;
 }
 .imggroup-five {
   width: 20rem;
   border-radius: 10px;
+  align-content: center;
 }
 .imggroup-six {
   width: 20rem;
   border-radius: 10px;
+  align-content: center;
 }
 .imggroup-seven {
   width: 20rem;
   border-radius: 10px;
+  align-content: center;
 }
 .imggroup-eight {
   width: 20rem;
   border-radius: 10px;
   height: 50%;
+  align-content: center;
 }
 .imggroup-nine {
   width: 20rem;
   border-radius: 10px;
   height: 40%;
+  align-content: center;
 }
 .flex-box:hover {
   transform: scale(1.3);
@@ -108,10 +142,24 @@ main {
   transform: translateY(-40px);
   background-color: cyan;
 }
-#animation {
+.flex-box {
   transition: all 0.3s ease-out;
 }
-
+.flex-box2 {
+  transition: all 0.3s ease-out;
+}
+.flex-box3 {
+  transition: all 0.3s ease-out;
+}
+.flex-box4 {
+  transition: all 0.3s ease-out;
+}
+.flex-box5 {
+  transition: all 0.3s ease-out;
+}
+.flex-box6 {
+  transition: all 0.3s ease-out;
+}
 @keyframes bababooey {
   from {
     color: white;
@@ -147,6 +195,26 @@ main {
     align-content: center;
     background-color: blanchedalmond;
   }
+  .flex-box2 {
+    align-content: center;
+    background-color: blanchedalmond;
+  }
+  .flex-box3 {
+    align-content: center;
+    background-color: blanchedalmond;
+  }
+  .flex-box4 {
+    align-content: center;
+    background-color: blanchedalmond;
+  }
+  .flex-box5 {
+    align-content: center;
+    background-color: blanchedalmond;
+  }
+  .flex-box6 {
+    align-content: center;
+    background-color: blanchedalmond;
+  }
 }
 @media only screen and (max-width: 812px) {
   div {
@@ -154,9 +222,28 @@ main {
     height: auto;
     float: left;
     display: flexbox;
-    flex-direction: column;
   }
   .flex-box {
+    align-content: center;
+    background-color: darkseagreen;
+  }
+  .flex-box2 {
+    align-content: center;
+    background-color: darkseagreen;
+  }
+  .flex-box3 {
+    align-content: center;
+    background-color: darkseagreen;
+  }
+  .flex-box4 {
+    align-content: center;
+    background-color: darkseagreen;
+  }
+  .flex-box5 {
+    align-content: center;
+    background-color: darkseagreen;
+  }
+  .flex-box6 {
     align-content: center;
     background-color: darkseagreen;
   }
